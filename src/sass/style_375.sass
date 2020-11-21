@@ -1,0 +1,836 @@
+@import "fonts"
+
+*
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+
+html
+  height: 100%
+
+body
+  display: block
+  width: 100%
+  height: 100%
+  background-color: #E5E5E5
+  overflow-x: auto
+
+.content
+  display: block
+  max-width: 375px
+  min-width: 320px
+  min-height: 100%
+  position: relative
+  margin: 0 auto
+
+.display-one
+  display: block
+  height: 554px
+  background-color: #26364d
+
+header
+  position: fixed
+  display: flex
+  align-items: center
+  height: 64px
+  width: 375px
+  background-color: #FFFFFF
+  z-index: 200
+  box-shadow: 0 3px 3px #32323247
+  top: 0
+  transition: top 0.3s ease-in-out
+  -webkit-transition: top 0.3s ease-in-out
+  -moz--transition: top 0.3s ease-in-out
+  -o-transition: top 0.3s ease-in-out
+
+
+.header-hide
+  top: -70px
+  transition: top 0.3s ease-in-out
+  -webkit-transition: top 0.3s ease-in-out
+  -moz--transition: top 0.3s ease-in-out
+  -o-transition: top 0.3s ease-in-out
+
+.header-line
+  display: block
+  position: relative
+  width: 100%
+  height: auto
+
+.logo
+  background-image: url("../img/raiff_logo.png")
+  height: 28px
+  width: 133px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: relative
+  float: left
+  margin: 2px 36px 0 16px
+
+.logo:after
+  display: block
+  content: ''
+  height: 28px
+  width: 1px
+  background-color: #E1E1E3
+  position: absolute
+  margin-left: 29px
+  left: 100%
+
+.visa
+  background-image: url("../img/visa_logo.png")
+  height: 24px
+  width: 75px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: relative
+  float: left
+  margin: 3px 0 0 19px
+
+.phone
+  display: block
+  position: relative
+  background-image: url("../img/phone.svg")
+  height: 24px
+  width: 24px
+  background-repeat: no-repeat
+  background-position: center
+  float: right
+  margin-right: 16px
+  margin-top: 2px
+
+.phone__number, .phone__text
+  display: none
+
+.display-one__bg
+  background-image: url("../img/promo_mob.jpg")
+  height: 490px
+  width: 100%
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: relative
+  top: 64px
+
+.label
+  position: relative
+  background-image: url("../img/label.png")
+  background-repeat: no-repeat
+  background-position: right
+  height: 34px
+  width: 171px
+  border-radius: 5px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: 16px
+  top: 24px
+
+.label .label__text-desktop
+  display: none
+
+.label .label__text-mob
+  display: block
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 24px
+  color: #FFFFFF
+  padding-top: 3px
+
+.offer
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 36px
+  line-height: 42px
+  letter-spacing: -0.2px
+  color: #FFFFFF
+  margin-left: 16px
+  top: 45px
+
+.offer-percent
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: 900
+  font-size: 64px
+  line-height: 72px
+  color: #FFFFFF
+  margin-left: 16px
+  top: 49px
+  letter-spacing: 3.2px
+
+.offer-percent span
+  font-size: 42px
+
+.button-style
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #FEE600
+  border-radius: 10px
+
+.offer-button
+  position: fixed !important
+  height: 54px
+  width: 375px
+  border-radius: 0 !important
+  bottom: 0
+  z-index: 200
+  opacity: 0
+  visibility: collapse
+  transition: opacity 0.2s ease-in-out, visibility 0.4s ease-in-out
+  -webkit-transition: opacity 0.2s ease-in-out, visibility 0.4s ease-in-out
+  -moz--transition: opacity 0.2s ease-in-out, visibility 0.4s ease-in-out
+  -o-transition: opacity 0.2s ease-in-out, visibility 0.4s ease-in-out
+
+.button-show
+  opacity: 1
+  visibility: visible
+  transition: opacity 0.2s ease-in-out, visibility 0.4s ease-in-out
+  -webkit-transition: opacity 0.2s ease-in-out, visibility 0.4s ease-in-out
+  -moz--transition: opacity 0.2s ease-in-out, visibility 0.4s ease-in-out
+  -o-transition: opacity 0.2s ease-in-out, visibility 0.4s ease-in-out
+
+.button-style:hover
+  background-color: #FED500
+
+.button-style:active
+  background-color: #E1E1E3
+
+.button-style:active p
+  color: #A2A4A6
+
+.button-style p
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 24px
+  color: #2B2D33
+  padding-top: 4px
+
+.display-two
+  display: block
+  height: 1038px
+  background-color: #FFFFFF
+
+.display-two__facts
+  display: block
+  height: 406px
+  border-bottom: 1px solid #E1E1E3
+
+.facts__item
+  display: block
+  text-align: center
+  padding: 20px 0 3px 0
+
+.facts__item:first-of-type
+  padding: 108px 0 3px 0
+
+.facts__item:nth-child(3)
+  display: none
+
+.facts__item:nth-child(4) .facts__item__desktop
+  display: none
+.facts__item:nth-child(4) .facts__item__mob
+  display: block
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  color: #808185
+
+.facts__item p:first-of-type
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 42px
+  color: #2B2D33
+
+.facts__item p:first-of-type span
+  font-size: 30px
+
+.facts__item p:last-of-type
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 26px
+  color: #808185
+
+.display-two__text
+  position: relative
+  top: 58px
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 30px
+  line-height: 36px
+  text-align: center
+  color: #2B2D33
+
+.display-two__text br
+  display: block
+
+.display-two__features
+  display: block
+  position: relative
+  width: 100%
+  margin: 0 auto
+  top: 87px
+
+.features__item
+  display: block
+  position: relative
+  width: 343px
+  height: 140px
+  background-color: #29476B
+  border-radius: 14px
+  margin: 0 auto 14px auto
+
+.features__item:last-of-type
+  margin: 0 auto
+
+.features__item p
+  display: block
+  position: relative
+  float: left
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: 500
+  font-size: 22px
+  line-height: 28px
+  color: #FFFFFF
+  top: 45px
+  margin-left: 30px
+
+.features__item__one
+  position: relative
+  float: right
+  background-image: url("../img/feature_1.png")
+  height: 100px
+  width: 121px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  top: 20px
+  margin-right: 20px
+
+.features__item__two
+  position: relative
+  float: right
+  background-image: url("../img/feature_2.png")
+  height: 124px
+  width: 105px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  top: 0
+  margin-right: 28px
+
+.features__item__three
+  position: relative
+  float: right
+  background-image: url("../img/feature_3_mob.png")
+  height: 106px
+  width: 120px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  top: 11px
+  margin-right: 20px
+
+.display-three
+  display: block
+  height: 720px
+  background-color: #FFFFFF
+
+.display-three h2
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 30px
+  line-height: 36px
+  text-align: center
+  color: #2B2D33
+  top: 34px
+
+.display-three h2 span:first-of-type
+  display: block
+.display-three h2 span:last-of-type
+  display: none
+
+.display-three__targets
+  display: flex
+  justify-content: center
+  position: relative
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  color: #808185
+  top: 44px
+
+.display-three__targets span
+  display: none
+
+.display-three__calc
+  display: block
+  position: relative
+  margin: 0 auto
+  width: 375px
+  height: 250px
+  top: 0
+
+.display-three__calc__left
+  display: block
+  position: relative
+  width: 343px
+  height: auto
+  padding: 68px 0 26px 0
+  margin: 0 auto
+
+.display-three__calc__left:after
+  display: none
+
+.display-three__calc__left label
+  display: block
+  position: relative
+  top: 8px
+  font-family: Navigo-Regular-Web
+  font-size: 16px
+  line-height: 24px
+  color: #2B2D33
+
+.calc__label-line .total-show
+  font-family: Navigo-Regular-Web
+  font-size: 24px
+  line-height: 30px
+  color: #2B2D33
+
+.calc__label-line .bottom-text
+  font-family: Navigo-Regular-Web
+  font-size: 12px
+  line-height: 16px
+  color: #A2A4A6
+
+.calc__left__sum
+  display: block
+  position: relative
+  margin-bottom: 30px
+  width: 343px
+
+.calc__label-line
+  display: flex
+  position: relative
+  justify-content: space-between
+
+#sum, #term
+  margin: 18px 0 18px 0
+
+.calc__left__term
+  display: block
+  position: relative
+  width: 343px
+
+.text-no-offer-desktop
+  display: none
+
+#sum
+  -webkit-appearance: none
+  width: 100%
+  height: 5px
+  background: -webkit-linear-gradient(left, #FEE600 0%, #FEE600 25%, #E1E1E3 25%, #E1E1E3 100%)
+  border-radius: 3px
+  outline: none
+#sum::-webkit-slider-thumb
+  -webkit-appearance: none
+  height: 30px
+  width: 30px
+  border-radius: 50%
+  background-color: #FEE600
+  cursor: pointer
+#sum::-webkit-slider-thumb:hover,
+#sum::-webkit-slider-thumb:active
+  background-color: #FED500
+
+#term
+  -webkit-appearance: none
+  width: 100%
+  height: 5px
+  background: -webkit-linear-gradient(left, #FEE600 0%, #FEE600 60%, #E1E1E3 60%, #E1E1E3 100%)
+  border-radius: 3px
+  outline: none
+#term::-webkit-slider-thumb
+  -webkit-appearance: none
+  height: 30px
+  width: 30px
+  border-radius: 50%
+  background-color: #FEE600
+  cursor: pointer
+#term::-webkit-slider-thumb:hover,
+#term::-webkit-slider-thumb:active
+  background-color: #FED500
+
+.display-three__calc__right
+  display: block
+  position: relative
+  width: 343px
+  height: 306px
+  margin: 0 auto
+  padding: 0
+  background-color: #F4F4F4
+  border-radius: 14px
+
+.calc__right__percent
+  margin: 0
+  padding: 28px 0 0 0
+
+.calc__right__sum
+  margin: 0
+  padding: 28px 0 27px 0
+
+.calc__right__percent p:first-of-type,
+.calc__right__sum p:first-of-type
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 28px
+  line-height: 34px
+  color: #2B2D33
+  text-align: center
+
+.calc__right__percent p:last-of-type,
+.calc__right__sum p:last-of-type
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 10px
+  color: #2B2D33
+  text-align: center
+
+.credit-button
+  width: 204px
+  height: 54px
+  margin: 0 auto
+
+.text-no-offer-mob
+  display: block
+  margin-top: 40px
+  font-family: Navigo-Regular-Web
+  font-size: 12px
+  line-height: 16px
+  color: #A2A4A6
+  text-align: center
+  padding: 0 20px
+
+.text-no-offer-mob:before
+  content: ''
+  display: block
+  position: absolute
+  background-color: #E1E1E3
+  width: 100%
+  height: 1px
+  left: 0
+  bottom: 56px
+
+.display-four
+  display: block
+  height: 845px
+  background-color: #FFFFFF
+
+.display-four h2
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 30px
+  line-height: 36px
+  text-align: center
+  color: #2B2D33
+  top: 38px
+
+.display-four h2 br
+  display: block
+
+.display-four__steps
+  display: block
+  position: relative
+  top: 57px
+
+.steps__item
+  width: 268px
+  margin: 0 auto 14px 32px
+
+.steps__item p
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  color: #2B2D33
+
+.steps__item__one
+  display: block
+  position: relative
+  background-image: url("../img/document.svg")
+  height: 24px
+  width: 20px
+  background-repeat: no-repeat
+  background-position: center
+  float: left
+  margin-right: 14px
+  margin-bottom: 20px
+
+.steps__item__two
+  display: block
+  position: relative
+  background-image: url("../img/sms.svg")
+  height: 24px
+  width: 22px
+  background-repeat: no-repeat
+  background-position: center
+  float: left
+  margin-right: 10px
+  margin-bottom: 20px
+
+.steps__item__three
+  display: block
+  position: relative
+  background-image: url("../img/card.svg")
+  height: 21px
+  width: 20px
+  background-repeat: no-repeat
+  background-position: center
+  float: left
+  margin-right: 10px
+  margin-bottom: 20px
+
+.display-four__form
+  display: flex
+  position: relative
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  width: 375px
+  height: 450px
+  background-color: #F4F4F4
+  border: none
+  box-sizing: border-box
+  border-radius: unset
+  top: 77px
+
+.display-four__form p
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 26px
+  color: #A2A4A6
+
+.display-five
+  display: block
+  height: 627px
+  background-color: #424548
+
+.display-five h2
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 30px
+  line-height: 36px
+  text-align: center
+  color: #FFFFFF
+  top: 60px
+
+.display-five h2 br
+  display: block
+
+.display-five__online
+  display: block
+  position: relative
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  text-align: center
+  color: #FFFFFF
+  top: 68px
+
+.display-five__online br
+  display: block
+
+.mobile-bank
+  display: block
+  position: relative
+  width: 375px
+  top: 100px
+
+.slide__mobile-bank
+  display: block
+  position: relative
+  width: 210px !important
+  height: 340px !important
+  background: #2B2D33
+  border-radius: 14px
+
+.slide__mobile-bank img
+  display: block
+  position: relative
+  margin: 0 auto
+  height: 286px
+  width: 168px
+  top: 54px
+  background-repeat: no-repeat
+  background-position: center
+
+.pagination__mobile-bank
+  display: none
+
+.bullet__mobile-bank
+  position: relative !important
+  display: flex
+  justify-content: center
+  align-items: center
+  top: 130px
+
+.bullet__mobile-bank .swiper-pagination-bullet
+  margin-right: 7px
+  width: 7px
+  height: 7px
+  background: transparent
+  border-radius: 50%
+  border: 1px solid #808185
+  box-sizing: border-box
+  opacity: 1
+
+.bullet__mobile-bank .swiper-pagination-bullet:last-of-type
+  margin-right: 0
+
+.bullet__mobile-bank .swiper-pagination-bullet-active
+  background-color: #FEE600
+  border: unset
+  width: 7px
+  height: 7px
+
+.display-five__button
+  display: none
+
+footer
+  display: block
+  position: relative
+  height: 360px
+  width: 100%
+
+.content-footer
+  display: block
+  max-width: 375px
+  min-width: 320px
+  min-height: 100%
+  position: relative
+  margin: 0 auto
+  background-color: #FFFFFF
+
+.content-footer__one
+  display: block
+  height: 60px
+  border-bottom: 1px solid #E1E1E3
+
+.content-footer__two
+  display: block
+  height: 109px
+  border-bottom: 1px solid #E1E1E3
+
+.content-footer__two__wrap
+  display: block
+  width: 100%
+  height: 100%
+  margin: 0 auto
+
+.content-footer__two__wrap p
+  font-family: Navigo-Light-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 16px
+  color: #55575C
+  padding-top: 5px
+
+.content-footer__two__wrap p:first-of-type
+  margin: 22px auto 11px 14px
+
+.content-footer__two__wrap p:last-of-type
+  margin: 0 22px 0 14px
+
+.content-footer__three
+  display: block
+  height: 166px
+
+.content-footer__three__text
+  display: block
+  height: 130px
+  padding: 0 0 5px 0
+  overflow-y: auto
+  width: 92%
+  margin: 30px auto 0 auto
+
+.content-footer__three__text p
+  font-family: Navigo-Light-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 16px
+  color: #808185
+  padding-right: 5px
+
+.scroll-style::-webkit-scrollbar
+  width: 3px
+  height: 3px
+
+.scroll-style::-webkit-scrollbar-button
+  background-color: #666
+  height: 0
+
+.scroll-style::-webkit-scrollbar-track
+  background-color: #E1E1E3
+
+.scroll-style::-webkit-scrollbar-track-piece
+  background-color: #E1E1E3
+
+.scroll-style::-webkit-scrollbar-thumb
+  height: 50px
+  background-color: #808185
+  border-radius: 4px
+
+.scroll-style::-webkit-scrollbar-corner
+//background-color: #999
+
+.scroll-style::-webkit-resizer
+//background-color: #666

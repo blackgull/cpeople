@@ -1,0 +1,908 @@
+@import "fonts"
+
+*
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+
+html
+  height: 100%
+
+body
+  display: block
+  width: 100%
+  height: 100%
+  background-color: #E5E5E5
+  overflow-x: auto
+
+.content
+  display: block
+  max-width: 1400px
+  min-width: 1280px
+  min-height: 100%
+  position: relative
+  margin: 0 auto
+
+.display-one
+  display: block
+  height: 630px
+
+header
+  display: flex
+  align-items: center
+  height: 80px
+  width: 100%
+  background-color: #FFFFFF
+
+.header-line
+  display: block
+  position: relative
+  width: 100%
+  height: auto
+
+.logo
+  background-image: url("../img/raiff_logo.png")
+  height: 36px
+  width: 172px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: relative
+  float: left
+  margin: 4px 50px 0 22px
+
+.logo:after
+  display: block
+  content: ''
+  height: 36px
+  width: 1px
+  background-color: #E1E1E3
+  position: absolute
+  margin-left: 33px
+  left: 100%
+
+.visa
+  background-image: url("../img/visa_logo.png")
+  height: 28px
+  width: 87px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: relative
+  float: left
+  margin: 8px 0 0 19px
+
+.phone
+  display: flex
+  flex-direction: column
+  position: relative
+  float: right
+  margin-right: 20px
+  margin-top: 2px
+
+.phone__number
+  display: block
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 20px
+  line-height: 26px
+  color: #2B2D33
+  text-align: right
+
+.phone__text
+  display: block
+  font-family: Navigo-Light-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 13px
+  line-height: 18px
+  color: #808185
+  text-align: right
+
+.display-one__bg
+  background-image: url("../img/promo_desk.jpg")
+  height: 550px
+  width: 100%
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+
+.label
+  position: relative
+  background-image: url("../img/label.png")
+  background-repeat: no-repeat
+  background-position: center
+  height: 34px
+  width: 236px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-left: 130px
+  top: 80px
+
+.label .label__text-desktop
+  display: block
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 24px
+  color: #FFFFFF
+  padding-top: 3px
+
+.label .label__text-mob
+  display: none
+
+.offer
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 60px
+  line-height: 70px
+  color: #FFFFFF
+  margin-left: 130px
+  top: 105px
+
+.offer-percent
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: 900
+  font-size: 108px
+  line-height: 70px
+  color: #FFFFFF
+  margin-left: 130px
+  top: 130px
+  letter-spacing: 3.2px
+
+.offer-percent span
+  font-size: 70px
+
+.button-style
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #FEE600
+  border-radius: 10px
+
+.offer-button
+  height: 54px
+  width: 213px
+  margin-left: 130px
+  top: 162px
+
+.button-show
+  opacity: 1
+
+.button-style:hover
+  background-color: #FED500
+
+.button-style:active
+  background-color: #E1E1E3
+
+.button-style:active p
+  color: #A2A4A6
+
+.button-style p
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 24px
+  color: #2B2D33
+  padding-top: 4px
+
+.display-two
+  display: block
+  height: 684px
+  background-color: #FFFFFF
+
+.display-two__facts
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 216px
+  border-bottom: 1px solid #E1E1E3
+
+.facts__item
+  display: flex
+  flex-direction: column
+  text-align: center
+  margin-right: 9.15%
+
+.facts__item:last-of-type
+  margin-right: 0
+
+.facts__item:nth-child(3)
+  display: block
+
+.facts__item:nth-child(4) .facts__item__desktop
+  display: block
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  color: #808185
+.facts__item:nth-child(4) .facts__item__mob
+  display: none
+
+.facts__item p:first-of-type
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 64px
+  line-height: 64px
+  color: #2B2D33
+
+.facts__item:nth-child(2) p:first-of-type
+  line-height: 70px
+
+.facts__item:nth-child(2) p:last-of-type
+  line-height: 10px
+
+.facts__item p:first-of-type span
+  font-size: 36px
+
+.facts__item p:last-of-type
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 4px
+  color: #808185
+
+.display-two__text
+  position: relative
+  top: 88px
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 54px
+  text-align: center
+  color: #2B2D33
+
+.display-two__text br
+  display: none
+
+.display-two__features
+  display: flex
+  justify-content: center
+  position: relative
+  width: 82%
+  margin: 0 auto
+  top: 143px
+
+.features__item
+  display: block
+  position: relative
+  min-width: 364px
+  height: 180px
+  background-color: #29476B
+  border-radius: 14px
+  margin-right: 2.2%
+
+.features__item:last-of-type
+  margin-right: 0
+
+.features__item p
+  display: block
+  position: relative
+  float: left
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: 500
+  font-size: 24px
+  line-height: 30px
+  color: #FFFFFF
+  top: 62px
+  margin-left: 30px
+
+.features__item__one
+  position: relative
+  float: right
+  background-image: url("../img/feature_1.png")
+  height: 130px
+  width: 160px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  top: 25px
+  margin-right: 28px
+
+.features__item__two
+  position: relative
+  float: right
+  background-image: url("../img/feature_2.png")
+  height: 155px
+  width: 131px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  top: 0
+  margin-right: 30px
+
+.features__item__three
+  position: relative
+  float: right
+  background-image: url("../img/feature_3.png")
+  height: 154px
+  width: 133px
+  display: block
+  background-repeat: no-repeat
+  background-position: center
+  top: 6px
+  margin-right: 0
+
+.display-three
+  display: block
+  height: 709px
+  background-color: #F4F4F4
+
+.display-three h2
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 54px
+  text-align: center
+  color: #2B2D33
+  top: 88px
+
+.display-three h2 span:first-of-type
+  display: none
+.display-three h2 span:last-of-type
+  display: block
+
+.display-three__targets
+  display: flex
+  justify-content: center
+  position: relative
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 26px
+  color: #808185
+  top: 100px
+
+.display-three__targets span
+  display: block
+
+.display-three__calc
+  display: flex
+  position: relative
+  margin: 0 auto
+  width: 1010px
+  height: 389px
+  background-color: #FFFFFF
+  border-radius: 14px
+  top: 150px
+
+.display-three__calc__left
+  display: block
+  position: relative
+  width: 70%
+  height: auto
+  padding: 60px 10px 0 60px
+
+.display-three__calc__left:after
+  content: ''
+  display: block
+  position: relative
+  width: 1px
+  height: 270px
+  background: #E1E1E3
+  top: -254px
+  float: right
+
+.display-three__calc__left label
+  display: block
+  position: relative
+  top: 8px
+  font-family: Navigo-Regular-Web
+  font-size: 16px
+  line-height: 24px
+  color: #2B2D33
+
+.calc__label-line .total-show
+  font-family: Navigo-Regular-Web
+  font-size: 32px
+  line-height: 30px
+  color: #2B2D33
+
+.calc__label-line .bottom-text
+  font-family: Navigo-Regular-Web
+  font-size: 12px
+  line-height: 12px
+  color: #A2A4A6
+
+.calc__left__sum
+  display: block
+  position: relative
+  margin-bottom: 30px
+  width: 572px
+
+.calc__label-line
+  display: flex
+  position: relative
+  justify-content: space-between
+
+#sum, #term
+  margin: 18px 0 18px 0
+
+.calc__left__term
+  display: block
+  position: relative
+  width: 572px
+
+.text-no-offer-desktop
+  display: block
+  margin-top: 40px
+  font-family: Navigo-Regular-Web
+  font-size: 13px
+  line-height: 18px
+  color: #A2A4A6
+
+#sum
+  -webkit-appearance: none
+  width: 100%
+  height: 5px
+  background: -webkit-linear-gradient(left, #FEE600 0%, #FEE600 25%, #E1E1E3 25%, #E1E1E3 100%)
+  border-radius: 3px
+  outline: none
+#sum::-webkit-slider-thumb
+  -webkit-appearance: none
+  height: 30px
+  width: 30px
+  border-radius: 50%
+  background-color: #FEE600
+  cursor: pointer
+#sum::-webkit-slider-thumb:hover,
+#sum::-webkit-slider-thumb:active
+  background-color: #FED500
+
+#sum::-moz-range-track
+  -moz-appearance: none
+  width: 100%
+  height: 5px
+  background: transparent
+  border-radius: 3px
+  outline: none
+#sum::-moz-range-thumb
+  -moz-appearance: none
+  height: 30px
+  width: 30px
+  border-radius: 50%
+  background-color: #FEE600
+  border: none
+  cursor: pointer
+#sum::-moz-range-thumb:hover,
+#sum::-moz-range-thumb:active
+  background-color: #FED500
+
+#sum::-ms-track
+  width: 100%
+  height: 5px
+  border-radius: 3px
+  outline: none
+  border: none
+  background: transparent
+  color: transparent
+#sum::-ms-fill-lower
+  background-color: #FEE600
+#sum::-ms-fill-upper
+  background-color: #E1E1E3
+#sum::-ms-thumb
+  height: 30px
+  width: 30px
+  border-radius: 50%
+  background-color: #FED500
+  border: none
+  cursor: pointer
+
+#term
+  -webkit-appearance: none
+  width: 100%
+  height: 5px
+  background: -webkit-linear-gradient(left, #FEE600 0%, #FEE600 60%, #E1E1E3 60%, #E1E1E3 100%)
+  border-radius: 3px
+  outline: none
+#term::-webkit-slider-thumb
+  -webkit-appearance: none
+  height: 30px
+  width: 30px
+  border-radius: 50%
+  background-color: #FEE600
+  cursor: pointer
+#term::-webkit-slider-thumb:hover,
+#term::-webkit-slider-thumb:active
+  background-color: #FED500
+
+#term::-moz-range-track
+  -moz-appearance: none
+  width: 100%
+  height: 5px
+  background: transparent
+  border-radius: 3px
+  outline: none
+#term::-moz-range-thumb
+  -moz-appearance: none
+  height: 30px
+  width: 30px
+  border-radius: 50%
+  background-color: #FEE600
+  border: none
+  cursor: pointer
+#term::-moz-range-thumb:hover,
+#term::-moz-range-thumb:active
+  background-color: #FED500
+
+#term::-ms-track
+  width: 100%
+  height: 5px
+  border-radius: 3px
+  outline: none
+  border: none
+  background: transparent
+  color: transparent
+#term::-ms-fill-lower
+  background-color: #FEE600
+#term::-ms-fill-upper
+  background-color: #E1E1E3
+#term::-ms-thumb
+  height: 30px
+  width: 30px
+  border-radius: 50%
+  background-color: #FED500
+  border: none
+  cursor: pointer
+
+.display-three__calc__right
+  display: block
+  position: relative
+  width: 30%
+  height: auto
+  padding: 56px 20px 0 20px
+
+.calc__right__percent
+  margin: 0 0 56px 26px
+
+.calc__right__sum
+  margin: 0 0 60px 26px
+
+.calc__right__percent p:first-of-type,
+.calc__right__sum p:first-of-type
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 32px
+  line-height: 42px
+  color: #2B2D33
+
+.calc__right__percent p:last-of-type,
+.calc__right__sum p:last-of-type
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 10px
+  color: #2B2D33
+
+.credit-button
+  width: 204px
+  height: 54px
+  margin-left: 26px
+
+.text-no-offer-mob
+  display: none
+
+.display-four
+  display: block
+  height: 870px
+  background-color: #FFFFFF
+
+.display-four h2
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 54px
+  text-align: center
+  color: #2B2D33
+  top: 88px
+
+.display-four h2 br
+  display: none
+
+.display-four__steps
+  display: flex
+  position: relative
+  justify-content: center
+  top: 124px
+
+.steps__item
+  width: 268px
+  margin-right: 2.3%
+
+.steps__item:last-of-type
+  margin-right: 0
+
+.steps__item p
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 24px
+  color: #2B2D33
+
+.steps__item__one
+  display: block
+  position: relative
+  background-image: url("../img/document.svg")
+  height: 24px
+  width: 20px
+  background-repeat: no-repeat
+  background-position: center
+  float: left
+  margin-right: 10px
+  margin-bottom: 20px
+
+.steps__item__two
+  display: block
+  position: relative
+  background-image: url("../img/sms.svg")
+  height: 24px
+  width: 22px
+  background-repeat: no-repeat
+  background-position: center
+  float: left
+  margin-right: 10px
+  margin-bottom: 20px
+
+.steps__item__three
+  display: block
+  position: relative
+  background-image: url("../img/card.svg")
+  height: 21px
+  width: 20px
+  background-repeat: no-repeat
+  background-position: center
+  float: left
+  margin-right: 10px
+  margin-bottom: 20px
+
+.display-four__form
+  display: flex
+  position: relative
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+  width: 964px
+  height: 511px
+  background-color: #FFFFFF
+  border: 1px solid #E1E1E3
+  box-sizing: border-box
+  border-radius: 12px
+  top: 167px
+
+.display-four__form p
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 26px
+  color: #A2A4A6
+
+.display-five
+  display: block
+  height: 824px
+  background-color: #424548
+
+.display-five h2
+  display: block
+  position: relative
+  font-family: Navigo-Bold-Web
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 54px
+  text-align: center
+  color: #FFFFFF
+  top: 88px
+
+.display-five h2 br
+  display: none
+
+.display-five__online
+  display: block
+  position: relative
+  font-family: Navigo-Regular-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 26px
+  text-align: center
+  color: #FFFFFF
+  top: 100px
+
+.display-five__online br
+  display: none
+
+.mobile-bank
+  display: block
+  position: relative
+  width: 996px
+  top: 160px
+
+.slide__mobile-bank
+  display: block
+  position: relative
+  width: 234px !important
+  height: 380px !important
+  background: #2B2D33
+  border-radius: 14px
+
+.slide__mobile-bank img
+  display: block
+  position: relative
+  margin: 0 auto
+  height: 320px
+  width: 186px
+  top: 60px
+  background-repeat: no-repeat
+  background-position: center
+
+.pagination__mobile-bank
+  display: flex
+  justify-content: center
+  position: relative
+  z-index: 100
+  top: -40px
+
+.pagination__mobile-bank .prev,
+.pagination__mobile-bank .next
+  display: block
+  position: relative
+  width: 42px
+  height: 42px
+  background-color: #FEE600
+  background-repeat: no-repeat
+  background-position: center
+  cursor: pointer
+  border-radius: 40%
+  outline: none
+
+.pagination__mobile-bank .prev
+  background-image: url("../img/arrow-left.svg")
+  left: -37.7%
+
+.pagination__mobile-bank .next
+  background-image: url("../img/arrow-right.svg")
+  right: -37.7%
+
+.pagination__mobile-bank .prev:hover,
+.pagination__mobile-bank .next:hover
+  background-color: #fed500
+
+.pagination__mobile-bank .prev:active,
+.pagination__mobile-bank .next:active
+  background-color: #e1e1e3
+
+.bullet__mobile-bank
+  display: none
+
+.display-five__button
+  margin: 0 auto
+  width: 265px
+  height: 54px
+  top: 188px
+
+footer
+  display: block
+  position: relative
+  height: 387px
+  width: 100%
+
+.content-footer
+  display: block
+  max-width: 1400px
+  min-width: 1280px
+  min-height: 100%
+  position: relative
+  margin: 0 auto
+  background-color: #FFFFFF
+
+.content-footer__one
+  display: block
+  height: 90px
+  border-bottom: 1px solid #E1E1E3
+
+.content-footer__two
+  display: block
+  height: 74px
+  border-bottom: 1px solid #E1E1E3
+
+.content-footer__two__wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 85%
+  height: 100%
+  margin: 0 auto
+
+.content-footer__two__wrap p
+  font-family: Navigo-Light-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 13px
+  line-height: 18px
+  color: #55575C
+  padding-top: 5px
+
+.content-footer__two__wrap p:first-of-type
+  margin-left: 2%
+
+.content-footer__two__wrap p:last-of-type
+  margin-right: 2.8%
+
+.content-footer__three
+  display: block
+  height: 100%
+
+.content-footer__three__text
+  display: block
+  height: 130px
+  padding: 0 5px 5px 5px
+  overflow-y: auto
+  width: 81%
+  margin: 47px auto 0 auto
+
+.content-footer__three__text p
+  font-family: Navigo-Light-Web
+  font-style: normal
+  font-weight: normal
+  font-size: 13px
+  line-height: 18px
+  color: #808185
+
+.scroll-style::-webkit-scrollbar
+  width: 5px
+  height: 3px
+
+.scroll-style::-webkit-scrollbar-button
+  background-color: #666
+  height: 0
+
+.scroll-style::-webkit-scrollbar-track
+  background-color: #E1E1E3
+
+.scroll-style::-webkit-scrollbar-track-piece
+  background-color: #E1E1E3
+
+.scroll-style::-webkit-scrollbar-thumb
+  height: 50px
+  background-color: #808185
+  border-radius: 4px
+
+.scroll-style::-webkit-scrollbar-corner
+  //background-color: #999
+
+.scroll-style::-webkit-resizer
+  //background-color: #666
+
+
